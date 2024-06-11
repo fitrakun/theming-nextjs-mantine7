@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@/*": ["./*"],
+      "@/public/*": ["./public/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/layout/*": ["./src/components/Layout/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/libs/*": ["./src/libs/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/queries/*": ["./src/queries/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "postcss.config.cjs",
+    ".prettierrc.cjs",
+    ".eslintrc.cjs",
+    ".prettierrc.cjs",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
